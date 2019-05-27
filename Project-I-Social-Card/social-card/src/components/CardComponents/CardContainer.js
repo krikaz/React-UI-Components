@@ -10,7 +10,8 @@ imageAlt='react background'
 
 const cardContent = <CardContent
 heading = 'Get started with React'
-content = 'React makes it painless to create interactive UIs. Designe simple views for each state in your application' 
+content = 'React makes it painless to create interactive UIs. Designe simple views for each state in your application'
+link = 'reactjs.org' 
 />
 
 function CardContainer() {

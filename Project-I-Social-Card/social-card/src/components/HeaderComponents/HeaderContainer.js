@@ -24,8 +24,10 @@ function HeaderContainer() {
   return (
     <div className='headerContainer'>
       {imageThumbnail}
-      {headerTitle}
-      {headerContent}
+      <div className='headerText'>
+        {headerTitle}
+        {headerContent}
+      </div>
     </div>
   );
 }
