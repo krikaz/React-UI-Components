@@ -1,11 +1,10 @@
 import React from 'react';
 import './Header.css';
 
-function HeaderTitle() {
+function HeaderTitle(heading) {
   return (
-    <h3> Lambda School @LambdaSchool 27 may</h3>
+    <h3>{heading}</h3>
   );
 }
 
-const headerTitle = <HeaderTitle />
-export default headerTitle;
+export default HeaderTitle;
