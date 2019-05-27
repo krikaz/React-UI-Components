@@ -4,7 +4,8 @@ import ImageThumbnail from './ImageThumbnail';
 import HeaderTitle from './HeaderTitle';
 import HeaderContent from './HeaderContent';
 
-
+const moment = require('moment');
+const timeNow = moment().format("MMM Do YYYY");
 
 const imageThumbnail = <ImageThumbnail 
 imageSource = 'https://tk-assets.lambdaschool.com/1c1b7262-cf23-4a9f-90b6-da0d3c74a5c6_lambdacrest.png'
@@ -12,7 +13,10 @@ alt = 'image lambda'
 />
 // console.log(imageThumbnail);
 
-const headerTitle = <HeaderTitle heading='Lambda School @LambdaSchool 27 may' />
+const headerTitle = <HeaderTitle 
+heading='Lambda School @LambdaSchool '  
+timeStamp = {timeNow}
+/>
 // console.log(headerTitle);
 
 const headerContent = <HeaderContent 
