@@ -24,7 +24,6 @@ import Footer from './components/FooterComponents/Footer';
 //   );
 // };
 
-
 const App = () => {
   return (
     <div>
@@ -33,7 +32,6 @@ const App = () => {
       <Footer />
     </div>
   );
-}
-
+};
 
 export default App;
