@@ -1,7 +1,7 @@
 import React from 'react';
 import './Header.css';
 
-function HeaderTitle(heading) {
+function HeaderTitle({heading}) {
   return (
     <h3>{heading}</h3>
   );

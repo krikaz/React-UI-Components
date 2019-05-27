@@ -22,12 +22,11 @@ import HeaderContainer from './components/HeaderComponents/HeaderContainer';
 //   );
 // };
 
-const headerContainer = <HeaderContainer />
 
 const App = () => {
   return (
     <div>
-      {headerContainer}
+      <HeaderContainer />
     </div>
   );
 }
