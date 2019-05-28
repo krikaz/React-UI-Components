@@ -4,14 +4,18 @@ import ActionButton from './components/ButtonComponents/ActionButton';
 import './App.css';
 
 
-const allNumbers = [0,1,2,3,4,5,6,7,8,9];
-const allNumbersElements = allNumbers.map(n => (<NumberButton key={n.toString()} number={n.toString()} />));
-console.log(allNumbersElements);
+const allNumbers = ['0','1','2','3','4','5','6','7','8','9','clear'];
+const allNumbersElements = allNumbers.map(n => (<NumberButton key={n} number={n} />));
+// console.log(allNumbersElements);
+
+const allActions = ['/','*','-','+','='];
+const allActionsElements = allActions.map(a => (<ActionButton key={a} action={a} />));
 
 const App = () => {
   return (
     <div>
       {allNumbersElements}
+      {allActionsElements}
     </div>
   );
 }
