@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import './Display.css';
 
-function CalculatorDisplay() {
+function CalculatorDisplay(props) {
 
   const [ whatIsDisplayed, setDisplay ] = useState('reset');
 
   return (
-    <div>
-      {whatIsDisplayed}
+    <div id={props.id}>
+      {whatIsDisplayed }
     </div>
   );
 }

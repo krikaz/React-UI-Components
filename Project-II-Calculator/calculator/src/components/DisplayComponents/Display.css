@@ -1,0 +1,7 @@
+div #display {
+  background-color: black;
+  color: white;
+  height: 100px;
+  text-align: right;
+  font-size: 3rem;
+}
