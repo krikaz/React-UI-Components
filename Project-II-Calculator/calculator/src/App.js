@@ -1,6 +1,7 @@
 import React from 'react';
 import NumberButton from './components/ButtonComponents/NumberButton';
 import ActionButton from './components/ButtonComponents/ActionButton';
+import CalculatorDisplay from './components/DisplayComponents/CalculatorDisplay';
 import './App.css';
 
 
@@ -11,9 +12,12 @@ const allNumbersElements = allNumbers.map(n => (<NumberButton key={n} number={n}
 const allActions = ['/','*','-','+','='];
 const allActionsElements = allActions.map(a => (<ActionButton key={a} action={a} />));
 
+const display = <CalculatorDisplay />;
+
 const App = () => {
   return (
     <div>
+      {display}
       {allNumbersElements}
       {allActionsElements}
     </div>
