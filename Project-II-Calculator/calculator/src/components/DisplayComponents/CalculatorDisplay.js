@@ -1,13 +1,13 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Display.css';
 
 function CalculatorDisplay(props) {
 
-  const [ whatIsDisplayed, setDisplay ] = useState('0');
+  // const [ whatIsDisplayed, setDisplay ] = useState('0');
 
   return (
     <div className={props.displayStyle}>
-      {whatIsDisplayed }
+      {props.text}
     </div>
   );
 }
