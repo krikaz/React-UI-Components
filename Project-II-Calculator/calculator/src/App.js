@@ -5,11 +5,11 @@ import CalculatorDisplay from './components/DisplayComponents/CalculatorDisplay'
 import './App.css';
 
 
-const allNumbers = ['0','1','2','3','4','5','6','7','8','9','clear'];
-const allNumbersElements = allNumbers.map(n => (<NumberButton key={n} number={n} />));
+const allNumbers = ['1','2','3','4','5','6','7','8','9','/','*','-','+','='];
+const allNumbersElements = allNumbers.map(n => (<NumberButton key={n} text={n} />));
 // console.log(allNumbersElements);
 
-const allActions = ['/','*','-','+','='];
+const allActions = ['clear', '0'];
 const allActionsElements = allActions.map(a => (<ActionButton key={a} action={a} />));
 
 const display = <CalculatorDisplay />;

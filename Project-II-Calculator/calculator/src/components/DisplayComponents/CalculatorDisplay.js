@@ -1,12 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Display.css';
 
-function CalculatorDisplay(props) {
+function CalculatorDisplay() {
+
+  const [ whatIsDisplayed, setDisplay ] = useState('reset');
+
   return (
     <div>
-      DISPLAY
+      {whatIsDisplayed}
     </div>
   );
 }
+
 
 export default CalculatorDisplay;
