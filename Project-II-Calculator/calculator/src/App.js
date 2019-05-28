@@ -20,12 +20,12 @@ const allActionsElements = allActions.map(a => (
   <ActionButton key={a} action={a} buttonStyle="rectangle" />
 ));
 
-const display = <CalculatorDisplay id="display" />;
+const display = <CalculatorDisplay displayStyle="displayInside" />;
 
 const App = () => {
   return (
     <div className="calculator">
-      <div className="display">{display}</div>
+      <div className="displayOutside">{display}</div>
       <div className="buttons">
         <div className="numbers">
           {allActionsElements[0]}

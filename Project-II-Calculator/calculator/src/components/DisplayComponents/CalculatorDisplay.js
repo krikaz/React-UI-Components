@@ -6,7 +6,7 @@ function CalculatorDisplay(props) {
   const [ whatIsDisplayed, setDisplay ] = useState('reset');
 
   return (
-    <div id={props.id}>
+    <div className={props.displayStyle}>
       {whatIsDisplayed }
     </div>
   );
