@@ -3,7 +3,7 @@ import './Display.css';
 
 function CalculatorDisplay(props) {
 
-  const [ whatIsDisplayed, setDisplay ] = useState('reset');
+  const [ whatIsDisplayed, setDisplay ] = useState('0');
 
   return (
     <div className={props.displayStyle}>

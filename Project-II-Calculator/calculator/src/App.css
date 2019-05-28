@@ -1,12 +1,7 @@
 .calculator {
   display: flex;
   flex-direction: column;
-  background-color: green;
   height: 100vh;
-}
-
-.displayOutside {
-  height: 25vh;
 }
 
 .buttons {

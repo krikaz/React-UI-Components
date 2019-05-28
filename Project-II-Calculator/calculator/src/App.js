@@ -4,11 +4,10 @@ import ActionButton from './components/ButtonComponents/ActionButton';
 import CalculatorDisplay from './components/DisplayComponents/CalculatorDisplay';
 import './App.css';
 
-const allNumbers = ['1', '2', '3', '4', '5', '6', '7', '8', '9'];
+const allNumbers = ['7', '8', '9', '4', '5', '6', '1', '2', '3'];
 const allNumbersElements = allNumbers.map(n => (
   <NumberButton key={n} text={n} buttonStyle="square-white" />
 ));
-// console.log(allNumbersElements);
 
 const allOperations = ['/', '*', '-', '+', '='];
 const allOperationsElements = allOperations.map(n => (
@@ -20,12 +19,12 @@ const allActionsElements = allActions.map(a => (
   <ActionButton key={a} action={a} buttonStyle="rectangle" />
 ));
 
-const display = <CalculatorDisplay displayStyle="displayInside" />;
+const display = <CalculatorDisplay displayStyle="display" />;
 
 const App = () => {
   return (
     <div className="calculator">
-      <div className="displayOutside">{display}</div>
+      {display}
       <div className="buttons">
         <div className="numbers">
           {allActionsElements[0]}
