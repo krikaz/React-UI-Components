@@ -1,1 +1,18 @@
-/* All styles for your header Components live here */
+.headerContainer {
+  padding: 1rem;
+
+  display: flex;
+}
+
+.headerContainer img {
+  width: 100px;
+  height: 100px;
+}
+
+.headerText {
+  padding: 1rem;
+
+  display: flex;
+  flex-direction: column;
+}
+

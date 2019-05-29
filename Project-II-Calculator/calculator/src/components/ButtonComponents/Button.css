@@ -1,0 +1,24 @@
+.square-white {
+  width: 33.33%;
+  height: 15vh;
+  background-color: white;
+  color: black;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.square-red {
+  width: 100%;
+  height: 15vh;
+  background-color: red;
+  color: white;
+  font-size: 2rem;
+}
+
+.rectangle {
+  width: 100%;
+  height: 15vh;
+  background-color: white;
+  color: black;
+  font-size: 2rem;
+}

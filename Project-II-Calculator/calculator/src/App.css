@@ -1,0 +1,25 @@
+.calculator {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  height: 75vh;
+}
+
+.numbers {
+  width: 75%;
+}
+
+.oneToNine {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.operations {
+  width: 25%;
+}
